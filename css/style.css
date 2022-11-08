@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#1f334b;
+    --secondry-color:#f4a70f;
+    --font-color:#828282;
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --primary-font:'Jost';
+    --secondry-font:'Kolker Brush';
+    --gutter-with:15px;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+ul,ol{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+span{
+    display: inline-block;
+}
+p{
+    display: inline-block;    
+}
+h2{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+h3{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.btn{
+    padding: 13px 15px 8px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    text-transform:uppercase;
+    font-size: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.container{
+    width:1140px;
+    margin:0 auto;
+    padding-left: var(--gutter-with);
+    padding-right:var(--gutter-with);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center
+}
+.justify-content-space-between{
+    justify-content: space-between
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+.align-items-baseline{
+    align-items: baseline;
+}
+.w-1{
+    width: 8.3333%;
+}
+.w-2{
+    width: 16.6666%;
+}
+.w-3{
+    width: 25%;
+}
+.w-4{
+    width: 33.3333%;
+}
+.w-5{
+    width: 41.6666%;
+}
+.w-6{
+    width: 50%;
+}
+.w-7{
+    width: 58.3333%;
+}
+.w-8{
+    width: 66.6666%;
+}
+.w-9{
+    width: 75%;
+}
+.w-10{
+    width: 83.3333%;
+}
+.w-11{
+    width: 91.6666%;
+}
+.w-12{
+    width: 100%;
+}
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6, .w-7, .w-8, .w-9, .w-10, .w-11, .w-12{
+    padding-left: var(--gutter-with);
+    padding-right: var(--gutter-with);
+}
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+header{
+    background-color: var(--primary-color);
+}
+.top-bar{
+    background-color: var(--white-color);
+    padding: 10px 0px;
+}
+.top-bar .menu{
+    margin-left: auto;
+    display: flex;
+}
+.top-bar .menu div{
+    margin-left: 15px;
+}
+.top-bar p{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.top-bar span{
+    color: var(--font-color);
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.top-bar label , .top-bar select{
+    color: var(--font-color);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.top-bar select{
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+.main-navigation{
+    background-color: var(--primary-color);
+}
+.logo{
+    padding:20px 0px;
+}
+.logo span{
+    font-family: var(--secondry-font);
+    font-size: 52px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.main-navigation .search{
+    background-color: var(--secondry-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-navigation .search input{
+    width: 90%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    line-height: 2;
+}
+::placeholder{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family:var(--primary-font);
+}
+.main-navigation .search i{
+    padding: 0px 15px;
+    color: var(--white-color);
+}
+.main-navigation .service .customer-support{
+    display: flex;
+    align-items: center;
+}
+.main-navigation .service .customer-support i{
+    font-size: 26px;
+    color: var(--white-color);
+    margin-right: 10px;
+}
+.main-navigation .service .customer-support p{
+    display: block;
+    color:var(--white-color);
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+.main-navigation .service .customer-support span{
+    color: var(--secondry-color);
+    font-size: 13px;
+}
+.navbar{
+    background-color: var(--secondry-color);
+    border-radius:6px 6px 0px 0px;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 10px;
+}
+nav ul li a span{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.navbar .btn{
+    margin-left: auto;
+}
+/* main */
+/* bener */
+.bener{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/pexels-andrea-piacquadio-787929.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bener .categories{
+    margin-right: 50px;
+}
+.bener .title span{
+    font-size: 36px;
+    font-family: var(--secondry-font);
+    color: var(--secondry-color);
+}
+.bener .title h2{
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom:25px;
+}
+.bener .categories .title{
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-family: var(--primary-font);
+    border-radius: 5px 5px 0px 0px;
+}
+.bener .categories .title h3 , .product ul h3{
+    margin-right: 25px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.bener .categories li{
+    background-color: var(--white-color);
+    padding: 8px;
+    color: var(--font-color);
+}
+.categories li i{
+    margin-right: 10px;
+}
+.categories li a{
+    color: var(--font-color);
+    font-size: 12px;
+}
+/* product */
+.product ul{
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0,0.09);
+}
+.product ul h3 {
+    color: var(--black-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.product ul li a{
+    display: flex;
+    align-items: center;
+}
+.product ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.product ul li a img{
+    width: 80px;
+    margin-right: 30px;
+}
+.product ul li a p{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: var(--font-color);
+}
+.product ul li a span{
+    color: var(--secondry-color);
+    font-size: 12px;
+
+}
+.product .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:20px;
+    
+}
+.product .title h3{
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+.product .title span {
+    padding: 2px 8px;
+    background-color: var(--white-color);
+    border: 0.1px solid #000000;
+    border-radius: 8px;
+    font-size: 12px;
+    transition: all 0.5s ease
+}
+.special-product , .product-img{
+    display: flex;
+
+}
+.product-img{
+    margin-bottom: 50px;
+}
+.product-img img{
+    width: 100px;
+    margin-right: 20px;
+}
+.product-img p{
+    font-size: 13px;
+    color: var(--font-color);
+    margin-bottom: 30px;
+}
+.product-img a{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: var(--secondry-color);
+}
+/* offer */
+.offer{
+    width: 100%;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-image: url('../img/retro-living-room-interior-design.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offer .title span{
+    background-color: var(--white-color);
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.offer .title h2{
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--white-color);
+    line-height: 1;
+}
+.offer .title strong{
+    color: var(--secondry-color);
+    font-size: 42px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+}
+.offer .title .btn{
+    text-transform: capitalize;
+}
+/* populer-product */
+.populer-product{
+
+}
+.populer-product .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.populer-product .title  span{
+    padding: 2px 8px;
+    background-color: var(--white-color);
+    border: 0.1px solid #000000;
+    border-radius: 8px;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+.populer-product .title span:hover{
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+}
+.populer-product-img{
+    padding: 10px;
+}
+.populer-product-img img{
+    width: 130px;
+    margin:  0 auto;
+    margin-bottom: 20px;
+
+}
+.populer-product-img p{
+    font-size: 12px;
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+/* offer-card */
+.card-text{
+    width: 100%;
+    padding: 30px;
+    background-image: url('../img/beautiful-woman-with-red-lipstick-opened-her-mouth-surprise-girl-beret-stylish-blouse-posing-with-bag.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.card-text::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
+}
+.card-text-2{
+    background-image: url('../img/handsome-blond-man-dark-blue-shirt-posing-grey-background-studio.jpg');
+}
+.card-text-3{
+    background-image: url('../img/retro-living-room-interior-design.jpg');
+}
+.card-text h3{
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+.card-text p{
+    display: block;
+    text-align: justify;
+    color: var(--white-color);
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+.card-text a{
+    display: block;
+    text-align: right;
+    font-weight: 600;
+    color: var(--secondry-color);
+    text-decoration: underline;
+}
+/* product-2  */
+.product-2 ul{
+    background-color:var(--primary-color);
+    padding: 30px 20px;
+}
+.product-2 ul li a img{
+    width: 40px;
+}
+.product-2 ul li a p{
+    color: var(--white-color);
+}
+.product-2 ul li a span{
+    color: var(--font-color);
+}
+.product-2 .special-offer-img img{
+    height: 200px;
+    object-fit: cover;
+    object-position: top center;
+    margin-bottom: 10px;
+}
+.product-2 .special-offer-img h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.product-2 .special-offer-img span{
+    color: var(--secondry-color);
+    font-size:12px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+.product-2 .special-offer-img p{
+    font-size: 12px;
+    color: var(--font-color);
+}
+.logos{
+    padding-top: 0;
+}
+.logos img{
+    width: 150px;
+    margin: 0 auto;
+}
+.populer-product-2{
+    padding-top: 0;
+}
+footer{
+    background-color: var(--primary-color);
+}
+.subscribr{
+    background-color: var(--secondry-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.subscribr .title{
+    margin-right: 50px;
+    position: relative;
+}
+.subscribr .title::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: var(--white-color);
+    top: 50%;
+    transform: translateY(-50%);
+    left:120%;
+
+}
+.subscribr .title span{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 0.5;
+    color: var(--white-color);
+}
+.subscribr .title h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.5;
+    color: var(--white-color);
+}
+.subscribr form{
+    display: flex;
+}
+.subscribr form h3{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white-color);
+    margin-right: 20px;
+}
+.subscribr form input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-right: 8px;
+    display: block;
+    border-radius: 8px 0px 0px 8px;
+
+}
+.subscribr form i{
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    color: var(--white-color);
+    line-height: 2;
+    border-radius: 0px 8px 8px 0px;
+}
+.main-footer h3{
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.main-footer ul li{
+    padding-bottom:8px;
+}
+.main-footer ul li  span{
+    color: var(--font-color);
+}
+.contact-info li{
+    display: flex;
+}
+
+.contact-info li i{
+    color: var(--secondry-color);
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+/* copyright */
+.copyright{
+    background-color: var(--white-color);
+}
+.copyright .row{ 
+    align-items: center;
+}
+.copyright .copyright-text , .copyright ul{
+    display: flex;
+    align-items: center;
+}
+.copyright-text .logo{
+    margin-right: 50px;
+}
+.copyright-text .logo span{
+    color: var(--black-color);
+}
+.copyright ul{
+    justify-content:flex-end;
+}
+.copyright ul li{
+    margin-left: 10px;
+}
