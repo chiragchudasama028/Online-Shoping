@@ -269,15 +269,13 @@ nav ul li a span{
     color: var(--white-color);
 }
 .bener .categories li{
-    background-color: var(--white-color);
     padding: 8px;
-    color: var(--font-color);
 }
 .categories li i{
     margin-right: 10px;
 }
 .categories li a{
-    color: var(--font-color);
+    color: var(--white-color);
     font-size: 12px;
 }
 /* product */
@@ -305,7 +303,6 @@ nav ul li a span{
 .product ul li a p{
     display: block;
     margin-bottom: 5px;
-    font-size: 16px;
     color: var(--font-color);
 }
 .product ul li a span{
@@ -624,4 +621,12 @@ footer{
 }
 .copyright ul li{
     margin-left: 10px;
+}
+.glassmorphism{
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
